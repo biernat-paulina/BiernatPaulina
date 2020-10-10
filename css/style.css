@@ -1,0 +1,292 @@
+/* import fonts from fonts.css file */
+@import url(../fonts.css);
+
+/* CSS Variables*/
+@import url(./partials/_variables.css);
+
+/* Global Variables */
+@import url(./partials/_global.css);
+
+/* Start of the navigation */
+
+.header_area .main-menu .navbar .navbar-brand {
+	padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+	padding: 1rem 10rem;
+	background: 0;
+
+}
+
+
+.header_area .main-menu .nav-item .nav-link {
+	font-family: var(--montserrat);
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 1.7rem;
+	color: var(--title-color);
+}
+
+
+.header_area .main-menu .navbar-nav .active a{
+	background: var(--gradient-color);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	background-clip:text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+	background: var(--gradient-color);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	background-clip:text;
+}
+
+/* End of the navigation */
+
+/* Banner Area */
+
+
+.site-main .site-banner {
+	background: url(../img/banner/home-banner.png) no-repeat 8% 40%;
+	background-size: cover;
+	height: 900px;
+
+}
+
+.site-main .site-banner .site-title h3{
+	padding-top: 35%;
+	font-weight:500;
+}
+
+.site-main .site-banner h3::after {
+
+content: " ";
+height: 2px;
+width: 18vw;
+background: black;
+display: inline-block;
+margin-left: 5%;
+transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+font-size: 4rem;
+}
+
+.site-main .site-banner .site-title h4{
+font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image>img{
+	padding: 7rem 0;
+	width: 90rem;
+}
+
+
+/* Ending to Banner Area */
+
+/* Starting About Area */
+.site-main .about-area{
+	padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 >span{
+	display: block;
+	font: normal bold 49px/60px var(--montserrat);
+	letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph >p{
+	padding: .4rem 0;
+}
+
+/* Ending About Area */
+
+/* Start Skills Area */
+
+.site-main .brand-area {
+	padding: 1rem 20rem;
+	margin-bottom: 4rem;
+
+}
+
+.site-main .brand-area .first-row .col-lg-4{
+	display: flex;
+	justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+	text-align: center;
+	padding: 1.8rem 0rem;
+	margin: .9rem 0;
+	width: 180px;
+	height: 100px;
+	cursor: pointer;
+	transition: transform .4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand >img {
+	width: 50%;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover {
+box-shadow: var(--box-shadow);
+transform: scale(1.1);
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover >img {
+filter: brightness(0.15);
+}
+
+.site-main .brand-area .experience-area{
+	padding-left: 1rem;
+}
+
+.site-main .brand-area .experience-area span{
+display: block;
+}
+
+.site-main .brand-area .experience-area .years-area{
+	background: url(../img/skills.svg) ;
+}
+
+
+.site-main .brand-area .experience-area .bg-panel{
+	position: absolute;
+	left: -190px; top: 0%;
+	background-image: url(../img/skills.svg);
+	width: 400px;
+	height: 400%;
+	margin-left: 340px;
+	z-index: -1;
+}
+/* Ending Skills Area */
+
+
+
+/* Starting skills Area */
+.site-main .skill-area{
+	padding: 8rem 5rem;
+}
+
+.site-main .skill-area .skill-title h2 >span{
+	display: block;
+	font: normal bold 49px/60px var(--montserrat);
+	letter-spacing: 21px;
+}
+
+.site-main .skill-area .skill-title .paragraph >p{
+	padding: .4rem 0;
+}
+
+/* Ending About Area */
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(75,75,75,0.7);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(48, 152, 157, 0.4);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  margin: -52px 0 0 0;
+  padding: 62px 100px;
+}
+
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+
+.project {
+    margin-top: 0px;
+  }
+
+  img {
+    max-width: 400px;
+    float: right;
+  }
+
+  .project:nth-child(even) > img {
+    float: left;
+  }
+
+  button:hover {
+    background-color: #9ec5ab;
+    cursor: pointer;
+  }
+}
+
+
+
